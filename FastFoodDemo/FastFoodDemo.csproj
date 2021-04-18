@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BDDB774-9994-45CD-A910-8A07B4C7AFA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FastFoodDemo</RootNamespace>
+    <AssemblyName>FastFoodDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddReservationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddReservationControl.Designer.cs">
+      <DependentUpon>AddReservationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FirstCustomControl.Designer.cs">
+      <DependentUpon>FirstCustomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FourthControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FourthControl.Designer.cs">
+      <DependentUpon>FourthControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySecondCustmControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MySecondCustmControl.Designer.cs">
+      <DependentUpon>MySecondCustmControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_order.Designer.cs">
+      <DependentUpon>New_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StolControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StolControl.Designer.cs">
+      <DependentUpon>StolControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThirdControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThirdControl.Designer.cs">
+      <DependentUpon>ThirdControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Waitor_tables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Waitor_tables.Designer.cs">
+      <DependentUpon>Waitor_tables.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddReservationControl.resx">
+      <DependentUpon>AddReservationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstCustomControl.resx">
+      <DependentUpon>FirstCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FourthControl.resx">
+      <DependentUpon>FourthControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MySecondCustmControl.resx">
+      <DependentUpon>MySecondCustmControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_order.resx">
+      <DependentUpon>New_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StolControl.resx">
+      <DependentUpon>StolControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThirdControl.resx">
+      <DependentUpon>ThirdControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Waitor_tables.resx">
+      <DependentUpon>Waitor_tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-person-icon-people-white-icon-115533940829fbknk3dev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\354-3547069_members-network-white-people-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43-433874_team-transparent-black-and-white-people-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie-chart-anatomy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining-room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining-table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dining-room1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\birthday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salad %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correct1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eq_it-na_pizza-margherita_sep2005_sml-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooking1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
